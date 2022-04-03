@@ -1,0 +1,65 @@
+@media screen and (max-width: 600px) {
+	ul.navbar li.right,
+	ul.navbar li {
+		float: none
+	}
+}
+
+.div-content {
+	border-style: double;
+	border-width: 8px;
+	border-color: darkgrey;
+	border-radius: 25px;
+	overflow: hidden;
+	position: relative
+}
+
+.slider-button {
+	border: none;
+	display: block;
+	padding: 9px 9px;
+	overflow: hidden;
+	text-decoration: none;
+	color: black;
+	background-color: transparent;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+	position: absolute;
+	top: 50%;
+	left: 465px;
+	font-size: 16px;
+	transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%)
+}
+
+.slider-button:hover {
+	color: black;
+	background-color: rgb(243, 9, 87);
+	border-style: groove
+}
+
+.display-left {
+	left: 1px
+}
+
+.display-right {
+	right: 5%
+}
+
+@media screen and (max-width: 600px) {
+	.div-content {
+		margin-left: 10px;
+		margin-right: 10px;
+		text-align: center;
+		position: relative;
+		margin-top: 10px;
+		width: 100%
+	}
+	@media screen and (max-width: 600px) {
+		.slider-button {
+			left: unset;
+			margin-left: 10px
+		}
+	}
+}
