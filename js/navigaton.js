@@ -2,11 +2,14 @@ function myFunction(x) {
   x.classList.toggle("change");
 }
 
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
+const getUserSelectedText = () => {
+  return window.getSelection().toString();
+}
+
+window.onscroll = () => {
+  if(window.innerHeight + window.pageY0ffset) >= document.body.offsetHeight) {
+    // console.log("Där slutade sidan.") 
   }
 }
+
+const toTop = () = window.scrollTo({top: 0, behaviour: 'smooth'})
