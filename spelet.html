@@ -25,40 +25,94 @@
          <div class="leftcolumn2">
             <div class="cards">
                <h2>Gameplay från Sid Meier's Civilization (1991)</h2>
-               <img src="bilder\civ1.png" style="width:100%" > 
+               <img src="bilder/civ1.png" style="width:100%" onclick="openModal();currentSlide(1)" onkeypress="openModal();currentSlide(1)" class="hover-shadow"> 
             </div>
          </div>
          <div class="rightcolumn2">
             <div class="cards">
                <h2>Gameplay från Civilization II</h2>
-               <img src="bilder\civ2.png" style="width: 100px height=80px"> 
+               <img src="bilder/civ2.png" style="width: 100px height=80px" onclick="openModal();currentSlide(2)" onkeypress="openModal();currentSlide(2)" class="hover-shadow"> 
             </div>
          </div>
          <div class="rightcolumn2">
             <div class="cards">
                <h2>Gameplay från Civilization III</h2>
-               <img src="bilder\civ3.png" style="width:100%" height="235px"> 
+               <img src="bilder/civ3.png" style="width:100%" height="235px" onclick="openModal();currentSlide(3)" onkeypress="openModal();currentSlide(3)" class="hover-shadow"> 
             </div>
          </div>
          <div class="rightcolumn2">
             <div class="cards">
                <h2>Gameplay från Civilization IV</h2>
-               <img src="bilder\civ4.png" style="width:100%" > 
+               <img src="bilder/civ4.png" style="width:100%" > 
             </div>
          </div>
          <div class="rightcolumn2">
             <div class="cards">
                <h2>Gameplay från Civilization V</h2>
-               <img src="bilder\civ5.png" style="width:100%" height="250px"> 
+               <img src="bilder/civ5.png" style="width:100%" height="250px"> 
             </div>
          </div>
          <div class="rightcolumn2">
             <div class="cards">
                <h2>Gameplay från Civilization VI</h2>
-               <img src="bilder\civ6.png" style="width:100%" height="250px"> 
+               <img src="bilder/civ6.png" style="width:100%" height="250px"> 
             </div>
          </div>
       </div>
+
+
+
+
+
+
+      <div id="myModal" class="modal">
+         <span class="close cursor" onclick="closeModal()" onkeypress="closeModal()">&times;</span>
+         <div class="modal-content">
+       
+           <div class="mySlides">
+             <div class="numbertext">1 / 3</div>
+             <img src="bilder/civ1.png" style="width:100%">
+           </div>
+       
+           <div class="mySlides">
+             <div class="numbertext">2 / 3</div>
+             <img src="bilder/civ2.png" style="width:100%">
+           </div>
+       
+           <div class="mySlides">
+             <div class="numbertext">3 / 3</div>
+             <img src="bilder/civ3.png" style="width:100%">
+           </div>
+       
+           <!-- Next/previous controls -->
+           <a class="prev" onclick="plusSlides(-1)" onkeypress="plusSlides(-1)">&#10094;</a>
+           <a class="next" onclick="plusSlides(1)" onkeypress="plusSlides(1)">&#10095;</a>
+       
+           <!-- Caption text -->
+           <div class="caption-container">
+             <p id="caption"></p>
+           </div>
+       
+           <!-- Thumbnail image controls -->
+           <div class="column">
+             <img class="demo" src="bilder/civ1.png" onclick="currentSlide(1)" onkeypress="currentSlide(1)" alt="Civ1">
+           </div>
+       
+           <div class="column">
+             <img class="demo" src="bilder/civ2.png" onclick="currentSlide(2)" onkeypress="currentSlide(2)" alt="Civ2">
+           </div>
+       
+           <div class="column">
+             <img class="demo" src="bilder/civ3.png" onclick="currentSlide(3)" onkeypress="currentSlide(3)" alt="Civ3">
+           </div>
+         </div>
+       </div>
+
+
+
+
+
+
       <footer class="footer">
          <p>All rights reserved - &#169; Copyright</p>
          <a href="regler.html" class="previous"> &laquo; Föregående</a> <a href="timeline.html" class="next">Nästa &raquo;</a> 
